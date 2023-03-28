@@ -1,0 +1,9 @@
+.calculator-screen {
+  height: 4rem;
+  border: solid 1px #d3d3d3;
+  border-radius: 0;
+  width: 24rem;
+  text-align: right;
+  color: #fff;
+  background-color: #af9c9c;
+}

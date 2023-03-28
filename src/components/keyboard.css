@@ -1,0 +1,28 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.keyboard-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 24rem;
+}
+
+.keyboard-row:last-child {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.calculator-btn {
+  background-color: #f2f2f2;
+  height: 4rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #d3d3d3;
+}
+
+.calculator-btn:last-child {
+  background-color: #ff5757;
+}
