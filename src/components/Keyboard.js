@@ -13,7 +13,7 @@ const Keyboard = () => (
         %
       </button>
       <button className="calculator-btn" type="button">
-        &div;
+        ÷
       </button>
     </li>
     <li className="keyboard-row">
