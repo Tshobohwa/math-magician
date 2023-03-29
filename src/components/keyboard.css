@@ -23,6 +23,14 @@
   border: solid 1px #d3d3d3;
 }
 
+.calculator-btn:active {
+  background-color: #d3d3d3;
+}
+
 .calculator-btn:last-child {
   background-color: #e7753c;
+}
+
+.calculator-btn:last-child:active {
+  background-color: #b75e31;
 }
