@@ -1,20 +1,27 @@
 import './calculator.css';
+import { useState } from 'react';
 import Screen from './Screen';
 import Keyboard from './Keyboard';
-
-// import calculate from '../logic/calculate';
+import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const handleButtonClick = (e) => {
+  const [screenValue, setScreenValue] = useState('0');
+  const [operation, setOperation] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+  const KeyboardClickHandler = (e) => {
     const buttonName = e.target.innerText;
-    console.log(buttonName);
+    const calcul = calculate(operation, buttonName);
+    setOperation(calcul);
+    setScreenValue(calcul.next || calcul.total || '0');
   };
   return (
     <div className="calculator-container">
-      <Screen />
-      <Keyboard onClick={handleButtonClick} />
+      <Screen screenInput={screenValue} />
+      <Keyboard onButtonClick={KeyboardClickHandler} />
     </div>
   );
 };
-
 export default Calculator;
