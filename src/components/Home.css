@@ -1,0 +1,16 @@
+.home-page__container {
+  margin-top: 6rem;
+  padding: 0 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-page__title {
+  color: #e7753c;
+  margin-bottom: 2rem;
+}
+
+.home-page__paragraph {
+  text-align: initial;
+  font-weight: 300;
+  font-size: 0.8rem;
+}

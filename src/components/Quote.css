@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital@0;1&family=Raleway&family=Roboto:wght@500&display=swap');
 
 p {
-  width: 80%;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .quote-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 24rem;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.quote-wraper {
+  width: 70%;
 }
 
 .quote-text {

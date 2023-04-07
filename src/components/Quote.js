@@ -33,7 +33,7 @@ const Quote = () => {
       {!error && !quote && <p className="quote-loading"> loading ...</p>}
       {error && <p className="quote-error">{error}</p>}
       {quote && (
-        <div>
+        <div className="quote-wraper">
           <p className="quote-text">
             &quot;
             {quote.quote}

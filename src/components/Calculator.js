@@ -18,10 +18,15 @@ const Calculator = () => {
     setScreenValue(calcul.next || calcul.total || '0');
   };
   return (
-    <div className="calculator-container">
-      <Screen screenInput={screenValue} />
-      <Keyboard onButtonClick={KeyboardClickHandler} />
-    </div>
+    <main className="calculator-main">
+      <div className="calculator-left">
+        <p>Let&apos; s do some math!</p>
+      </div>
+      <div className="calculator-container">
+        <Screen screenInput={screenValue} />
+        <Keyboard onButtonClick={KeyboardClickHandler} />
+      </div>
+    </main>
   );
 };
 export default Calculator;

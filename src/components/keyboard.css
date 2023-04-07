@@ -6,7 +6,7 @@
 .keyboard-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 24rem;
+  width: 20rem;
 }
 
 .keyboard-row:last-child {
@@ -15,7 +15,7 @@
 
 .calculator-btn {
   background-color: #f2f2f2;
-  height: 4rem;
+  height: 3rem;
   border-radius: 0;
   display: flex;
   align-items: center;
